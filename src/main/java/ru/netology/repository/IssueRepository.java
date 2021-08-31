@@ -26,13 +26,11 @@ public class IssueRepository {
         items.add(item);
     }
 
-    public void remove(Issue item) {
-        items.remove(item);
-    }
-
     public void removeById(int id) {
         items.removeIf(item -> item.getId() == id);
     }
 
-
+    public void remove(Issue item) {
+        items.remove(item);
+    }
 }
